@@ -111,9 +111,6 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 # Display/Graphics
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
