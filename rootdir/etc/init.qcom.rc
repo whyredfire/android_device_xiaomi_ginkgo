@@ -439,6 +439,7 @@ service vendor.ss_ramdump /system/bin/subsystem_ramdump_system 2
     class main
 #    user system
     group system everybody
+    ioprio rt 4
     disabled
 
 on property:ro.vendor.iocgrp.config=1
