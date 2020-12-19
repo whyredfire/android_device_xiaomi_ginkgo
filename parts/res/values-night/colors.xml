@@ -17,6 +17,6 @@
 <resources>
 
     <!-- Xiaomi Parts -->
-    <color name="device_settings_wave_bg">#f7f7f7</color>
+    <color name="device_settings_wave_bg">#202124</color>
 
 </resources>
