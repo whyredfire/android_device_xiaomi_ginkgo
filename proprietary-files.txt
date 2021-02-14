@@ -2036,6 +2036,9 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
+# QTI Telephony - from LA.QSSI.11.0.r1-09400-qssi.0
+system_ext/framework/qti-telephony-common.jar|e6f7c4df7b925073525d9b678f27087e1f45017f
+
 # Qualcomm Trusted Execution Environment (QTEE)
 system_ext/lib/vendor.qti.hardware.qteeconnector@1.0.so
 system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so
