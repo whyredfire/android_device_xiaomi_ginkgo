@@ -26,6 +26,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := false
+CUSTOM_BUILD_TYPE := OFFICIAL
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier
