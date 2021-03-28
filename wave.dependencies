@@ -3,7 +3,7 @@
         "repository":   "ghostrider-reborn/android_kernel_xiaomi_ginkgo",
         "target_path":  "kernel/xiaomi/ginkgo",
         "remote":       "github",
-        "branch":       "ruby"
+        "branch":       "11.0"
     },
     {
         "repository":   "vendor_xiaomi_ginkgo",
