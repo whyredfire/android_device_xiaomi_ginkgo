@@ -293,6 +293,10 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# OTA
+PRODUCT_PACKAGES += \
+    Updates
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
@@ -452,3 +456,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
