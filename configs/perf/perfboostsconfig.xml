@@ -20,12 +20,13 @@
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- GPU MIN_FREQUENCY resource opcode, value-->
 
         <!-- Type="1", main launch boost of 2.5sec -->
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="2500" Target="trinket"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x40800100, 0xFFF" />
+                       0x40800100, 0xFFF, 0x4280C000, 950" />
 
     <!--app lauch boost (disabling packing)-->
         <!-- POWER COLLAPSE resource opcode, value-->
@@ -99,9 +100,11 @@
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- GPU MIN_FREQUENCY resource opcode, value-->
         <Config
             Id="0x00001083" Enable="true" Timeout="500" Target="trinket"
-            Resources="0x40804000, 2016, 0x40804100, 1804, 0x40800000, 1804, 0x40800100, 1804" />
+            Resources="0x40804000, 2016, 0x40804100, 1804, 0x40800000, 1804, 0x40800100, 1804,
+                       0x4280C000, 745" />
 
     <!--Vertical Scroll boost-->
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -130,11 +133,13 @@
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
         <!-- SCHEDBOOST resource opcode, value-->
+        <!-- GPU MIN_FREQUENCY resource opcode, value-->
 
         <!-- Type="4", Pre-Fling boost -->
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="trinket"
-            Resources="0x41800000, 0x26, 0x40800000, 1401, 0x40800100, 1305, 0x40C00000, 2" />
+            Resources="0x41800000, 0x26, 0x40800000, 1536, 0x40800100, 1612, 0x40C00000, 2,
+                       0x4280C000, 600" />
 
     <!--MTP boost-->
         <!-- SCHEDBOOST resource opcode, value-->
