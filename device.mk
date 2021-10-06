@@ -381,6 +381,15 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display \
     vendor/qcom/opensource/data-ipa-cfg-mgr
 
+# Source
+PRODUCT_HOST_PACKAGES += \
+    aapt2 \
+    avbtool \
+    brotli \
+    debugfs \
+    signapk \
+    zipalign
+
 # Telephony
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
