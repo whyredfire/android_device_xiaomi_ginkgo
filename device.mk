@@ -235,10 +235,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/ginkgo-kernel/trinket/kernel-headers
 
-# Keyhandler
-PRODUCT_PACKAGES += \
-    KeyHandler
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
