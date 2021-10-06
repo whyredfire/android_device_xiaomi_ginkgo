@@ -224,6 +224,8 @@ LOCAL_KERNEL := device/xiaomi/ginkgo-kernel/kernel
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/ginkgo-kernel/trinket/kernel-headers
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
