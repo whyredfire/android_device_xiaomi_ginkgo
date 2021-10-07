@@ -13,9 +13,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    GinkgoMiuiCamera \
-    NoCutoutOverlay \
-    NotchBarKiller \
     WillowFrameworkRes
 
 # AID/fs configs
@@ -88,7 +85,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
 
 # Camera
-$(call inherit-product, vendor/miuicamera/config.mk)
+#$(call inherit-product, vendor/miuicamera/config.mk)
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
@@ -298,13 +295,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_willow/android.hardware.nfc.uicc.xml
 
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/parts/init.xiaomiparts.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.xiaomiparts.rc
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
@@ -386,7 +376,10 @@ PRODUCT_PACKAGES += \
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    kernel/xiaomi/ginkgo
+    kernel/xiaomi/ginkgo \
+    hardware/qcom-caf/sm8150 \
+    vendor/qcom/opensource/commonsys-intf/display \
+    vendor/qcom/opensource/data-ipa-cfg-mgr
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -466,6 +459,3 @@ PRODUCT_PACKAGES += \
     libqdMetaData.vendor \
     libwfdaac_vendor \
     vendor.display.config@2.0
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
